@@ -1,6 +1,6 @@
 .navbar {
   background-color: #221f1f !important;
-  padding: 10px 20px;
+  padding: 10px 20px !important;
 }
 
 .nav-logo {
@@ -19,18 +19,18 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: white !important;
+  color: #f5f5f1 !important;
 }
 
 .navbar-icons i {
-  color: white;
+  color: #f5f5f1;
   font-size: 1.2rem;
   margin-left: 15px;
   cursor: pointer;
 }
 
 .kids-text {
-  color: white;
+  color: #f5f5f1;
   font-size: 0.8rem;
   font-weight: bold;
   margin-left: 15px;
