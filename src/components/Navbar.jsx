@@ -5,7 +5,7 @@ const Navbar = () => (
     <div className="container-fluid">
       {/* Logo */}
       <a className="navbar-brand" href="#">
-        <img src="../assets/logo.png" className="nav-logo" alt="logo" />
+        <img src="../assets/netflix-logo-png-2562.png" className="nav-logo" alt="logo" />
       </a>
 
       {/* x mobile */}
