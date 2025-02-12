@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/navbar";
 import TopBar from "./components/topbar";
 import Cards from "./components/cards";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Cards title="Spiderman" />
         <Cards title="Superman" />
       </div>
+      <Footer />
     </div>
   );
 }

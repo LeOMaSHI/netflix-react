@@ -1,3 +1,4 @@
+import "../components/cards.css";
 import { useEffect, useState } from "react";
 
 const Cards = ({ title }) => {
@@ -23,14 +24,16 @@ const Cards = ({ title }) => {
   return (
     <>
       <h4 style={{ color: "white" }}>{title}</h4>
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6">
         {movies.map((movie, index) => (
           <div className="col mb-2 text-center px-1" key={index}>
-            <img
-              className="img-fluid"
-              src={movie.Poster !== "N/A" ? movie.Poster : "placeholder.jpg"}
-              alt={movie.Title}
-            />
+            <dic className="image-container">
+              <img
+                className="img-fluid"
+                src={movie.Poster !== "N/A" ? movie.Poster : "placeholder.jpg"}
+                alt={movie.Title}
+              />
+            </dic>
           </div>
         ))}
       </div>
