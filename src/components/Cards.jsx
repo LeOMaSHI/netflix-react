@@ -1,5 +1,6 @@
 import "../components/cards.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Cards = ({ title }) => {
   const [movies, setMovies] = useState([]);
@@ -27,13 +28,15 @@ const Cards = ({ title }) => {
       <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6">
         {movies.map((movie, index) => (
           <div className="col mb-2 text-center px-1" key={index}>
-            <dic className="image-container">
-              <img
-                className="img-fluid"
-                src={movie.Poster !== "N/A" ? movie.Poster : "placeholder.jpg"}
-                alt={movie.Title}
-              />
-            </dic>
+            <div className="image-container">
+              <Link to={`/moviedetails/${movie.imdbID}`}>
+                <img
+                  className="img-fluid"
+                  src={movie.Poster !== "N/A" ? movie.Poster : "placeholder.jpg"}
+                  alt={movie.Title}
+                />
+              </Link>
+            </div>
           </div>
         ))}
       </div>
